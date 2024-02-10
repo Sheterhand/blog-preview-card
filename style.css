@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+body{
+    background-color: var(--yellow);
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+}
+
+.container{
+    border-radius: 15px;
+    margin: 150px auto;
+    max-width: 386px;
+    background-color: var(--white);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    box-shadow: 10px 5px 0px var(--black);
+    border: 1px solid var(--black);
+}
+
+img{
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 24px;
+}
+
+.fit-image{
+    width: 100%;
+}
+
+h4{
+    align-self:flex-start;
+    background-color: var(--yellow);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h5{
+    align-self:flex-start;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-bottom: 15px;
+}
+
+h2{
+    align-self:flex-start;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--green);
+    margin-bottom: 15px;
+    letter-spacing: -0.7px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+h2:hover a {
+    color: var(--yellow);
+}
+
+h2:focus a {
+    color: var(--yellow);
+}
+
+p{
+    align-self:flex-start;
+    color: var(--grey);
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+figure{
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+figure img{
+    transform: scale(0.5);
+    margin: 0px -10px 0px -14px;
+}
+
+figure figcaption{
+    margin: 6px 0px 0px -14px;
+    font-weight: 800;
+}
+
+/* ---------------------- */
+/* Colors                 */
+/* ---------------------- */
+
+
+:root {
+    /* Primary  */
+    --yellow:hsl(47, 88%, 63%);
+    /* Neutral  */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+@media (max-width: 420px) {
+    .container{
+        margin:0;
+    }
+    body{
+        padding: 15% 5%;
+    }
+    html {
+        font-size: 18px;
+    }
+    h2{
+        font-size: 1.4rem;
+    } 
+}
